@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  HelloWorld
+//  iLoveWalking
 //
 //  Created by Will Chen on 7/13/13.
 //  Copyright (c) 2013 TapSense. All rights reserved.
@@ -9,12 +9,6 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
