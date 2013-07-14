@@ -216,7 +216,7 @@
                 // note: iPhone 3G will locate you using the triangulation of the cell towers.
                 // so you may experience spikes in location data (in small time intervals)
                 // due to 3G tower triangulation.
-                // 
+                //
                 MKMapRect updateRect = [self.crumbs addCoordinate:newLocation.coordinate];
                 
                 if (!MKMapRectIsNull(updateRect))
@@ -237,6 +237,7 @@
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
 {
+    
     if (!self.crumbView)
     {
         _crumbView = [[CrumbPathView alloc] initWithOverlay:overlay];

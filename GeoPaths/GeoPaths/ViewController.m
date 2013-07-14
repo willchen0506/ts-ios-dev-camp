@@ -36,12 +36,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     locations = [NSMutableArray array];
     
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self; // Tells the location manager to send updates to this object
     
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest; // kCLLocationAccuracyBestForNavigation
-    
-    [self.locationManager startUpdatingLocation];
+    //[self.locationManager startUpdatingLocation];
+    [self.map setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:NO];
 
 }
 
@@ -51,17 +48,25 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)buttonClicked:(id)sender {
-    if ([self.logButton.titleLabel.text isEqualToString:@"Start logging"]) {
-        [self.logButton setTitle:@"Stop logging" forState:UIControlStateNormal];
-        [self logLocation];
-        timer = [NSTimer scheduledTimerWithTimeInterval:5
-                                                 target:self
-                                               selector:@selector(logLocation)
-                                               userInfo:nil
-                                                repeats:YES];
+    if ([self.logButton.titleLabel.text isEqualToString:@"Start"]) {
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self; // Tells the location manager to send updates to this object
+        
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest; // kCLLocationAccuracyBestForNavigation
+        
+        [self.logButton setTitle:@"Stop" forState:UIControlStateNormal];
+        [self.locationManager startUpdatingLocation];
+        //[self logLocation];
+//        timer = [NSTimer scheduledTimerWithTimeInterval:5
+//                                                 target:self
+//                                               selector:@selector(logLocation)
+//                                               userInfo:nil
+//                                                repeats:YES];
     } else {
-        [self.logButton setTitle:@"Start logging" forState:UIControlStateNormal];
-        [timer invalidate];
+        [self.logButton setTitle:@"Start" forState:UIControlStateNormal];
+        [self.locationManager stopUpdatingLocation];
+        self.locationManager.delegate = nil;
+        //[timer invalidate];
     }
 }
 
@@ -82,7 +87,19 @@
     }
 }
 
-
+- (IBAction)toggleTrackUserHeading:(id)sender
+{
+    UISwitch *trackHeaderSwitch = (UISwitch *)sender;
+    if (trackHeaderSwitch.isOn)
+    {
+        // track the user (the map follows the user's location and heading)
+        [self.map setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:NO];
+    }
+    else
+    {
+        [self.map setUserTrackingMode:MKUserTrackingModeNone animated:NO];
+    }
+}
 
 // MapKit
 #pragma mark - MapKit
@@ -122,6 +139,7 @@
                 // so you may experience spikes in location data (in small time intervals)
                 // due to 3G tower triangulation.
                 //
+                NSLog(@"%f, %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
                 MKMapRect updateRect = [self.crumbs addCoordinate:newLocation.coordinate];
                 
                 if (!MKMapRectIsNull(updateRect))
@@ -142,6 +160,8 @@
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
 {
+    NSLog(@"CRUMB VIEW IS %@", self.crumbView);
+    
     if (!self.crumbView)
     {
         _crumbView = [[CrumbPathView alloc] initWithOverlay:overlay];

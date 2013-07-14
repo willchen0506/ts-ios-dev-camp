@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-85-nye">
@@ -18,8 +18,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzz-Rr-FY3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="Alh-Lx-vsj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="View all locations">
+                                <state key="normal" title="View">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,7 +35,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-qh-zP8">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Start logging">
+                                <state key="normal" title="Start">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -45,21 +48,21 @@
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mza-RK-iXr">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="472" id="0Fo-5t-zoe"/>
+                                    <constraint firstAttribute="height" constant="399" id="hzT-EO-cBP"/>
                                 </constraints>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mza-RK-iXr" firstAttribute="top" secondItem="N8M-85-nye" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5VZ-qO-m6g"/>
                             <constraint firstItem="mza-RK-iXr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="9Eh-JK-qdb"/>
+                            <constraint firstItem="mza-RK-iXr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="9Sp-mk-gWP"/>
+                            <constraint firstItem="N8M-85-nye" firstAttribute="centerY" secondItem="3kf-qh-zP8" secondAttribute="centerY" type="default" id="9vl-v8-VF4"/>
+                            <constraint firstItem="3kf-qh-zP8" firstAttribute="baseline" secondItem="nzz-Rr-FY3" secondAttribute="baseline" type="default" id="G3u-8G-Xge"/>
+                            <constraint firstAttribute="trailing" secondItem="nzz-Rr-FY3" secondAttribute="trailing" constant="7" id="HdV-jl-x0F"/>
                             <constraint firstItem="mza-RK-iXr" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="I5Z-bb-bUR"/>
-                            <constraint firstItem="nzz-Rr-FY3" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="PzK-OO-R1t"/>
-                            <constraint firstItem="N8M-85-nye" firstAttribute="centerX" secondItem="mza-RK-iXr" secondAttribute="centerX" type="default" id="R89-Ee-gja"/>
-                            <constraint firstItem="mza-RK-iXr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Vob-rh-9bf"/>
-                            <constraint firstItem="3kf-qh-zP8" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="j5W-mB-0Fq"/>
-                            <constraint firstItem="3kf-qh-zP8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="5" id="rUK-KH-OIN"/>
-                            <constraint firstItem="nzz-Rr-FY3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="t7x-D0-mtU"/>
+                            <constraint firstItem="N8M-85-nye" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="125" id="Q7P-jd-Qr5"/>
+                            <constraint firstItem="mza-RK-iXr" firstAttribute="top" secondItem="3kf-qh-zP8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hIT-O7-u11"/>
+                            <constraint firstItem="3kf-qh-zP8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="7" id="k1m-Mk-Gpb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -77,7 +80,7 @@
             <objects>
                 <tableViewController id="51m-tw-tCJ" customClass="TestTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ioV-Lw-gTv">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y8f-EO-FjM">
@@ -117,25 +120,9 @@
             <point key="canvasLocation" x="-178" y="-395"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TestTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TestTableViewController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="location" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="logButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
