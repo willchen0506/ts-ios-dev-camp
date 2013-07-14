@@ -7,31 +7,56 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MMExampleCenterTableViewController.h"
+#import "MMExampleDrawerVisualStateManager.h"
+#import "MMExampleSideDrawerViewController.h"
 #import "ViewController.h"
+
+#import <QuartzCore/QuartzCore.h>
 
 @implementation AppDelegate
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    UIViewController * leftSideDrawerViewController = [[MMExampleSideDrawerViewController alloc] init];
+    
+    UIViewController * centerViewController = [[MMExampleCenterTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    
+    
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:centerViewController];
+    
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:navigationController
+                                             leftDrawerViewController:leftSideDrawerViewController
+                                             rightDrawerViewController:nil];
+    [drawerController setMaximumRightDrawerWidth:200.0];
+    [drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block;
+         block = [[MMExampleDrawerVisualStateManager sharedManager]
+                  drawerVisualStateBlockForDrawerSide:drawerSide];
+         if(block){
+             block(drawerController, drawerSide, percentVisible);
+         }
+     }];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:drawerController];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil] autorelease];
-    } else {
-        self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil] autorelease];
-    }
-    self.window.rootViewController = self.viewController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

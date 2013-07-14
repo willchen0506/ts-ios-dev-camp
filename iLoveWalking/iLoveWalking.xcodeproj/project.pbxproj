@@ -19,6 +19,18 @@
 		BE8D1A5D179213F900354DBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1A5C179213F900354DBF /* ViewController.m */; };
 		BE8D1A60179213F900354DBF /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8D1A5E179213F900354DBF /* ViewController_iPhone.xib */; };
 		BE8D1A63179213F900354DBF /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8D1A61179213F900354DBF /* ViewController_iPad.xib */; };
+		BE8D1A77179216B100354DBF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8D1A76179216B100354DBF /* QuartzCore.framework */; };
+		BE8D1AEF17921F5E00354DBF /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1AE817921F5E00354DBF /* MMDrawerBarButtonItem.m */; };
+		BE8D1AF017921F5E00354DBF /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1AEA17921F5E00354DBF /* MMDrawerController.m */; };
+		BE8D1AF117921F5E00354DBF /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1AEC17921F5E00354DBF /* MMDrawerVisualState.m */; };
+		BE8D1AF217921F5E00354DBF /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1AEE17921F5E00354DBF /* UIViewController+MMDrawerController.m */; };
+		BE8D1B1817921F6600354DBF /* MMCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1AFD17921F6600354DBF /* MMCenterTableViewCell.m */; };
+		BE8D1B1A17921F6600354DBF /* MMExampleCenterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1B0117921F6600354DBF /* MMExampleCenterTableViewController.m */; };
+		BE8D1B1B17921F6600354DBF /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1B0317921F6600354DBF /* MMExampleDrawerVisualStateManager.m */; };
+		BE8D1B1E17921F6600354DBF /* MMExampleSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1B0917921F6600354DBF /* MMExampleSideDrawerViewController.m */; };
+		BE8D1B2017921F6600354DBF /* MMSideDrawerSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1B0D17921F6600354DBF /* MMSideDrawerSectionHeaderView.m */; };
+		BE8D1B2117921F6600354DBF /* MMSideDrawerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1B0F17921F6600354DBF /* MMSideDrawerTableViewCell.m */; };
+		BE8D1B2217921F6600354DBF /* MMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8D1B1117921F6600354DBF /* MMTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +51,29 @@
 		BE8D1A5C179213F900354DBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BE8D1A5F179213F900354DBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		BE8D1A62179213F900354DBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		BE8D1A76179216B100354DBF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BE8D1AE717921F5E00354DBF /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		BE8D1AE817921F5E00354DBF /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		BE8D1AE917921F5E00354DBF /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		BE8D1AEA17921F5E00354DBF /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		BE8D1AEB17921F5E00354DBF /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		BE8D1AEC17921F5E00354DBF /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		BE8D1AED17921F5E00354DBF /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		BE8D1AEE17921F5E00354DBF /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		BE8D1AFC17921F6600354DBF /* MMCenterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCenterTableViewCell.h; sourceTree = "<group>"; };
+		BE8D1AFD17921F6600354DBF /* MMCenterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCenterTableViewCell.m; sourceTree = "<group>"; };
+		BE8D1B0017921F6600354DBF /* MMExampleCenterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleCenterTableViewController.h; sourceTree = "<group>"; };
+		BE8D1B0117921F6600354DBF /* MMExampleCenterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleCenterTableViewController.m; sourceTree = "<group>"; };
+		BE8D1B0217921F6600354DBF /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		BE8D1B0317921F6600354DBF /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		BE8D1B0817921F6600354DBF /* MMExampleSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleSideDrawerViewController.h; sourceTree = "<group>"; };
+		BE8D1B0917921F6600354DBF /* MMExampleSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleSideDrawerViewController.m; sourceTree = "<group>"; };
+		BE8D1B0C17921F6600354DBF /* MMSideDrawerSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerSectionHeaderView.h; sourceTree = "<group>"; };
+		BE8D1B0D17921F6600354DBF /* MMSideDrawerSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerSectionHeaderView.m; sourceTree = "<group>"; };
+		BE8D1B0E17921F6600354DBF /* MMSideDrawerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSideDrawerTableViewCell.h; sourceTree = "<group>"; };
+		BE8D1B0F17921F6600354DBF /* MMSideDrawerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSideDrawerTableViewCell.m; sourceTree = "<group>"; };
+		BE8D1B1017921F6600354DBF /* MMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTableViewCell.h; sourceTree = "<group>"; };
+		BE8D1B1117921F6600354DBF /* MMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8D1A77179216B100354DBF /* QuartzCore.framework in Frameworks */,
 				BE8D1A44179213F900354DBF /* UIKit.framework in Frameworks */,
 				BE8D1A46179213F900354DBF /* Foundation.framework in Frameworks */,
 				BE8D1A48179213F900354DBF /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +111,7 @@
 		BE8D1A42179213F900354DBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE8D1A76179216B100354DBF /* QuartzCore.framework */,
 				BE8D1A43179213F900354DBF /* UIKit.framework */,
 				BE8D1A45179213F900354DBF /* Foundation.framework */,
 				BE8D1A47179213F900354DBF /* CoreGraphics.framework */,
@@ -85,12 +122,14 @@
 		BE8D1A49179213F900354DBF /* iLoveWalking */ = {
 			isa = PBXGroup;
 			children = (
+				BE8D1AF317921F6500354DBF /* ExampleFiles */,
 				BE8D1A52179213F900354DBF /* AppDelegate.h */,
 				BE8D1A53179213F900354DBF /* AppDelegate.m */,
 				BE8D1A5B179213F900354DBF /* ViewController.h */,
 				BE8D1A5C179213F900354DBF /* ViewController.m */,
 				BE8D1A5E179213F900354DBF /* ViewController_iPhone.xib */,
 				BE8D1A61179213F900354DBF /* ViewController_iPad.xib */,
+				BE8D1AE617921F5E00354DBF /* MMDrawerController */,
 				BE8D1A4A179213F900354DBF /* Supporting Files */,
 			);
 			path = iLoveWalking;
@@ -108,6 +147,42 @@
 				BE8D1A59179213F900354DBF /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE8D1AE617921F5E00354DBF /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D1AE717921F5E00354DBF /* MMDrawerBarButtonItem.h */,
+				BE8D1AE817921F5E00354DBF /* MMDrawerBarButtonItem.m */,
+				BE8D1AE917921F5E00354DBF /* MMDrawerController.h */,
+				BE8D1AEA17921F5E00354DBF /* MMDrawerController.m */,
+				BE8D1AEB17921F5E00354DBF /* MMDrawerVisualState.h */,
+				BE8D1AEC17921F5E00354DBF /* MMDrawerVisualState.m */,
+				BE8D1AED17921F5E00354DBF /* UIViewController+MMDrawerController.h */,
+				BE8D1AEE17921F5E00354DBF /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		BE8D1AF317921F6500354DBF /* ExampleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D1AFC17921F6600354DBF /* MMCenterTableViewCell.h */,
+				BE8D1AFD17921F6600354DBF /* MMCenterTableViewCell.m */,
+				BE8D1B0017921F6600354DBF /* MMExampleCenterTableViewController.h */,
+				BE8D1B0117921F6600354DBF /* MMExampleCenterTableViewController.m */,
+				BE8D1B0217921F6600354DBF /* MMExampleDrawerVisualStateManager.h */,
+				BE8D1B0317921F6600354DBF /* MMExampleDrawerVisualStateManager.m */,
+				BE8D1B0817921F6600354DBF /* MMExampleSideDrawerViewController.h */,
+				BE8D1B0917921F6600354DBF /* MMExampleSideDrawerViewController.m */,
+				BE8D1B0C17921F6600354DBF /* MMSideDrawerSectionHeaderView.h */,
+				BE8D1B0D17921F6600354DBF /* MMSideDrawerSectionHeaderView.m */,
+				BE8D1B0E17921F6600354DBF /* MMSideDrawerTableViewCell.h */,
+				BE8D1B0F17921F6600354DBF /* MMSideDrawerTableViewCell.m */,
+				BE8D1B1017921F6600354DBF /* MMTableViewCell.h */,
+				BE8D1B1117921F6600354DBF /* MMTableViewCell.m */,
+			);
+			path = ExampleFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +255,17 @@
 				BE8D1A50179213F900354DBF /* main.m in Sources */,
 				BE8D1A54179213F900354DBF /* AppDelegate.m in Sources */,
 				BE8D1A5D179213F900354DBF /* ViewController.m in Sources */,
+				BE8D1AEF17921F5E00354DBF /* MMDrawerBarButtonItem.m in Sources */,
+				BE8D1AF017921F5E00354DBF /* MMDrawerController.m in Sources */,
+				BE8D1AF117921F5E00354DBF /* MMDrawerVisualState.m in Sources */,
+				BE8D1AF217921F5E00354DBF /* UIViewController+MMDrawerController.m in Sources */,
+				BE8D1B1817921F6600354DBF /* MMCenterTableViewCell.m in Sources */,
+				BE8D1B1A17921F6600354DBF /* MMExampleCenterTableViewController.m in Sources */,
+				BE8D1B1B17921F6600354DBF /* MMExampleDrawerVisualStateManager.m in Sources */,
+				BE8D1B1E17921F6600354DBF /* MMExampleSideDrawerViewController.m in Sources */,
+				BE8D1B2017921F6600354DBF /* MMSideDrawerSectionHeaderView.m in Sources */,
+				BE8D1B2117921F6600354DBF /* MMSideDrawerTableViewCell.m in Sources */,
+				BE8D1B2217921F6600354DBF /* MMTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +396,7 @@
 				BE8D1A68179213F900354DBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
