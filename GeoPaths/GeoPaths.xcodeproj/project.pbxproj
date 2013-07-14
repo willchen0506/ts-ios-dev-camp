@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CF2327D417922E4300D3D481 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2327D317922E4300D3D481 /* TestTableViewController.m */; };
+		CF2327D91792607400D3D481 /* BreadcrumbAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2327D61792607400D3D481 /* BreadcrumbAppDelegate.m */; };
+		CF2327DA1792607400D3D481 /* BreadcrumbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2327D81792607400D3D481 /* BreadcrumbViewController.m */; };
+		CF2327DF1792609100D3D481 /* CrumbPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2327DC1792609100D3D481 /* CrumbPath.m */; };
+		CF2327E01792609100D3D481 /* CrumbPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2327DE1792609100D3D481 /* CrumbPathView.m */; };
+		CF2327E21792621500D3D481 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2327E11792621500D3D481 /* MapKit.framework */; };
 		CF42B4091792160900FAE85F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B4081792160900FAE85F /* UIKit.framework */; };
 		CF42B40B1792160900FAE85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B40A1792160900FAE85F /* Foundation.framework */; };
 		CF42B40D1792160900FAE85F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B40C1792160900FAE85F /* CoreGraphics.framework */; };
@@ -36,6 +41,15 @@
 /* Begin PBXFileReference section */
 		CF2327D217922E4300D3D481 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
 		CF2327D317922E4300D3D481 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		CF2327D51792607400D3D481 /* BreadcrumbAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreadcrumbAppDelegate.h; sourceTree = "<group>"; };
+		CF2327D61792607400D3D481 /* BreadcrumbAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreadcrumbAppDelegate.m; sourceTree = "<group>"; };
+		CF2327D71792607400D3D481 /* BreadcrumbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreadcrumbViewController.h; sourceTree = "<group>"; };
+		CF2327D81792607400D3D481 /* BreadcrumbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreadcrumbViewController.m; sourceTree = "<group>"; };
+		CF2327DB1792609100D3D481 /* CrumbPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPath.h; sourceTree = "<group>"; };
+		CF2327DC1792609100D3D481 /* CrumbPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPath.m; sourceTree = "<group>"; };
+		CF2327DD1792609100D3D481 /* CrumbPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumbPathView.h; sourceTree = "<group>"; };
+		CF2327DE1792609100D3D481 /* CrumbPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumbPathView.m; sourceTree = "<group>"; };
+		CF2327E11792621500D3D481 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CF42B4051792160900FAE85F /* GeoPaths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoPaths.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF42B4081792160900FAE85F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF42B40A1792160900FAE85F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2327E21792621500D3D481 /* MapKit.framework in Frameworks */,
 				CF42B4531792170C00FAE85F /* CoreLocation.framework in Frameworks */,
 				CF42B4541792170C00FAE85F /* libz.1.1.3.dylib in Frameworks */,
 				CF42B4551792170C00FAE85F /* MobileCoreServices.framework in Frameworks */,
@@ -99,6 +114,7 @@
 		CF42B3FC1792160900FAE85F = {
 			isa = PBXGroup;
 			children = (
+				CF2327E11792621500D3D481 /* MapKit.framework */,
 				CF42B40E1792160900FAE85F /* GeoPaths */,
 				CF42B4351792160900FAE85F /* GeoPathsTests */,
 				CF42B4071792160900FAE85F /* Frameworks */,
@@ -139,6 +155,14 @@
 		CF42B40E1792160900FAE85F /* GeoPaths */ = {
 			isa = PBXGroup;
 			children = (
+				CF2327DB1792609100D3D481 /* CrumbPath.h */,
+				CF2327DC1792609100D3D481 /* CrumbPath.m */,
+				CF2327DD1792609100D3D481 /* CrumbPathView.h */,
+				CF2327DE1792609100D3D481 /* CrumbPathView.m */,
+				CF2327D51792607400D3D481 /* BreadcrumbAppDelegate.h */,
+				CF2327D61792607400D3D481 /* BreadcrumbAppDelegate.m */,
+				CF2327D71792607400D3D481 /* BreadcrumbViewController.h */,
+				CF2327D81792607400D3D481 /* BreadcrumbViewController.m */,
 				CF42B4171792160900FAE85F /* AppDelegate.h */,
 				CF42B4181792160900FAE85F /* AppDelegate.m */,
 				CF42B4201792160900FAE85F /* MainStoryboard_iPhone.storyboard */,
@@ -256,6 +280,10 @@
 				CF42B4191792160900FAE85F /* AppDelegate.m in Sources */,
 				CF42B4281792160900FAE85F /* ViewController.m in Sources */,
 				CF2327D417922E4300D3D481 /* TestTableViewController.m in Sources */,
+				CF2327D91792607400D3D481 /* BreadcrumbAppDelegate.m in Sources */,
+				CF2327DA1792607400D3D481 /* BreadcrumbViewController.m in Sources */,
+				CF2327DF1792609100D3D481 /* CrumbPath.m in Sources */,
+				CF2327E01792609100D3D481 /* CrumbPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

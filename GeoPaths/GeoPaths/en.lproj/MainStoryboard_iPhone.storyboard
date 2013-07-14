@@ -43,25 +43,34 @@
                                     <action selector="buttonClicked:" destination="2" eventType="touchUpInside" id="Gfy-Z6-eyz"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mza-RK-iXr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="472" id="0Fo-5t-zoe"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="N8M-85-nye" firstAttribute="centerX" secondItem="nzz-Rr-FY3" secondAttribute="centerX" type="default" id="X7z-kA-MMT"/>
-                            <constraint firstItem="3kf-qh-zP8" firstAttribute="centerX" secondItem="N8M-85-nye" secondAttribute="centerX" type="default" id="cJC-9m-aEi"/>
-                            <constraint firstAttribute="bottom" secondItem="3kf-qh-zP8" secondAttribute="bottom" constant="74" id="ckg-NO-NgE"/>
-                            <constraint firstItem="3kf-qh-zP8" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="gke-NF-Y9S"/>
-                            <constraint firstAttribute="bottom" secondItem="N8M-85-nye" secondAttribute="bottom" constant="216" id="vuf-yF-jgn"/>
-                            <constraint firstItem="nzz-Rr-FY3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="33" id="zuj-jC-4SU"/>
+                            <constraint firstItem="mza-RK-iXr" firstAttribute="top" secondItem="N8M-85-nye" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5VZ-qO-m6g"/>
+                            <constraint firstItem="mza-RK-iXr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="9Eh-JK-qdb"/>
+                            <constraint firstItem="mza-RK-iXr" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="I5Z-bb-bUR"/>
+                            <constraint firstItem="nzz-Rr-FY3" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="PzK-OO-R1t"/>
+                            <constraint firstItem="N8M-85-nye" firstAttribute="centerX" secondItem="mza-RK-iXr" secondAttribute="centerX" type="default" id="R89-Ee-gja"/>
+                            <constraint firstItem="mza-RK-iXr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Vob-rh-9bf"/>
+                            <constraint firstItem="3kf-qh-zP8" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="j5W-mB-0Fq"/>
+                            <constraint firstItem="3kf-qh-zP8" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="5" id="rUK-KH-OIN"/>
+                            <constraint firstItem="nzz-Rr-FY3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="t7x-D0-mtU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="location" destination="N8M-85-nye" id="5AT-F0-Jgp"/>
                         <outlet property="logButton" destination="3kf-qh-zP8" id="l6c-c3-6uw"/>
+                        <outlet property="map" destination="mza-RK-iXr" id="RIP-AS-0YX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-619" y="-19"/>
+            <point key="canvasLocation" x="-625" y="-37"/>
         </scene>
         <!--Test Table View Controller-->
         <scene sceneID="jN4-lP-Q5O">
@@ -105,35 +114,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC9-Ug-Dss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="-33"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="ccv-gS-Lie">
-            <objects>
-                <tableViewController id="tg8-ei-RFa" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="epI-hy-IEa">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="AgE-nR-TU4">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="tg8-ei-RFa" id="dVq-UG-WnW"/>
-                            <outlet property="delegate" destination="tg8-ei-RFa" id="Pvh-in-Xaz"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KQa-Qx-NqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="-178" y="-395"/>
         </scene>
     </scenes>
     <classes>
@@ -146,9 +127,9 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="buttonClicked:"/>
                 <relationship kind="outlet" name="location" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="logButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
             </relationships>
         </class>
     </classes>
