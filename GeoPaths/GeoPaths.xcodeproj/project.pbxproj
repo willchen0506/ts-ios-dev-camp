@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2327D417922E4300D3D481 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2327D317922E4300D3D481 /* TestTableViewController.m */; };
 		CF42B4091792160900FAE85F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B4081792160900FAE85F /* UIKit.framework */; };
 		CF42B40B1792160900FAE85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B40A1792160900FAE85F /* Foundation.framework */; };
 		CF42B40D1792160900FAE85F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B40C1792160900FAE85F /* CoreGraphics.framework */; };
@@ -29,9 +30,12 @@
 		CF42B4571792170C00FAE85F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B4501792170C00FAE85F /* Security.framework */; };
 		CF42B4581792170C00FAE85F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B4511792170C00FAE85F /* StoreKit.framework */; };
 		CF42B4591792170C00FAE85F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B4521792170C00FAE85F /* SystemConfiguration.framework */; };
+		CF42B45B1792199E00FAE85F /* GPX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF42B45A1792199E00FAE85F /* GPX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF2327D217922E4300D3D481 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		CF2327D317922E4300D3D481 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		CF42B4051792160900FAE85F /* GeoPaths.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoPaths.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF42B4081792160900FAE85F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF42B40A1792160900FAE85F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +68,7 @@
 		CF42B4501792170C00FAE85F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CF42B4511792170C00FAE85F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CF42B4521792170C00FAE85F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF42B45A1792199E00FAE85F /* GPX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPX.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 				CF42B4091792160900FAE85F /* UIKit.framework in Frameworks */,
 				CF42B40B1792160900FAE85F /* Foundation.framework in Frameworks */,
 				CF42B4471792169000FAE85F /* Parse.framework in Frameworks */,
+				CF42B45B1792199E00FAE85F /* GPX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +117,7 @@
 		CF42B4071792160900FAE85F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF42B45A1792199E00FAE85F /* GPX.framework */,
 				CF42B44C1792170C00FAE85F /* CoreLocation.framework */,
 				CF42B44D1792170C00FAE85F /* libz.1.1.3.dylib */,
 				CF42B44E1792170C00FAE85F /* MobileCoreServices.framework */,
@@ -135,6 +142,8 @@
 				CF42B4171792160900FAE85F /* AppDelegate.h */,
 				CF42B4181792160900FAE85F /* AppDelegate.m */,
 				CF42B4201792160900FAE85F /* MainStoryboard_iPhone.storyboard */,
+				CF2327D217922E4300D3D481 /* TestTableViewController.h */,
+				CF2327D317922E4300D3D481 /* TestTableViewController.m */,
 				CF42B4231792160900FAE85F /* MainStoryboard_iPad.storyboard */,
 				CF42B4261792160900FAE85F /* ViewController.h */,
 				CF42B4271792160900FAE85F /* ViewController.m */,
@@ -246,6 +255,7 @@
 				CF42B4151792160900FAE85F /* main.m in Sources */,
 				CF42B4191792160900FAE85F /* AppDelegate.m in Sources */,
 				CF42B4281792160900FAE85F /* ViewController.m in Sources */,
+				CF2327D417922E4300D3D481 /* TestTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +365,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoPaths/GeoPaths-Prefix.pch";
 				INFOPLIST_FILE = "GeoPaths/GeoPaths-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,6 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GeoPaths/GeoPaths-Prefix.pch";
 				INFOPLIST_FILE = "GeoPaths/GeoPaths-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +406,7 @@
 				CF42B4421792160900FAE85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
