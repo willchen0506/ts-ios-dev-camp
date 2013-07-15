@@ -23,6 +23,7 @@
 #import "MMExampleCenterTableViewController.h"
 #import "MMSideDrawerTableViewCell.h"
 #import "MMSideDrawerSectionHeaderView.h"
+#import "LWSimpleTableViewController.h"
 
 @implementation MMExampleSideDrawerViewController
 
@@ -191,11 +192,36 @@
 
 #pragma mark - Table view delegate
 
+-(void)backPressed: (id)sender
+{
+    [self.navigationController popViewControllerAnimated: YES]; // or popToRoot... if required.
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     switch (indexPath.section) {
+        case LWMenuSectionHome:{
+            MMExampleCenterTableViewController * center = [[MMExampleCenterTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+            
+            UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
+            [self.mm_drawerController
+             setCenterViewController:nav
+             withCloseAnimation:YES
+             completion:nil];
+            break;
+        }
         case LWMenuSectionPopular:{
-            NSLog(@"Popular clicked");
+            LWSimpleTableViewController * center = [[LWSimpleTableViewController alloc] initWithStyle:UITableViewStylePlain];
+            
+            center.title = @"Popular";
+            UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
+            nav.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleBordered target:self action:@selector(backPressed:)];
+            [self.mm_drawerController
+             setCenterViewController:nav
+             withCloseAnimation:YES
+             completion:nil];
+        
         }
         default:
             break;

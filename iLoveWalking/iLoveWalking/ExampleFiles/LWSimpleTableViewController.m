@@ -19,7 +19,7 @@
 // THE SOFTWARE.
 
 
-#import "MMExampleCenterTableViewController.h"
+#import "LWSimpleTableViewController.h"
 #import "MMExampleDrawerVisualStateManager.h"
 #import "UIViewController+MMDrawerController.h"
 #import "MMDrawerBarButtonItem.h"
@@ -30,18 +30,11 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-typedef NS_ENUM(NSInteger, LWCenterViewControllerSection){
-    LWCenterViewControllerSectionPopular,
-    LWCenterViewControllerSectionFeatured,
-    LWCenterViewControllerSectionSocial,
-    LWCenterViewControllerSectionMy
-};
-
-@interface MMExampleCenterTableViewController ()
+@interface LWSimpleTableViewController ()
 
 @end
 
-@implementation MMExampleCenterTableViewController
+@implementation LWSimpleTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -79,6 +72,7 @@ typedef NS_ENUM(NSInteger, LWCenterViewControllerSection){
     
     
     UIView *backView = [[UIView alloc] init];
+//    [backView setBackgroundColor:[UIColor blackColor]];
     [backView setBackgroundColor:[UIColor colorWithRed:208.0/255.0
                                                  green:208.0/255.0
                                                   blue:208.0/255.0
@@ -115,22 +109,17 @@ typedef NS_ENUM(NSInteger, LWCenterViewControllerSection){
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
-//    switch (section) {
-//        case LWCenterViewControllerSectionPopular:
-//        case LWCenterViewControllerSectionMy:
-//            return 5;
-//        case LWCenterViewControllerSectionSocial:
-//            return 1;
-//        default:
-//            return 0;
-//    }
-    return 1;
+    return 5;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 150;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -145,41 +134,30 @@ typedef NS_ENUM(NSInteger, LWCenterViewControllerSection){
         [tableView registerNib: customCellNib forCellReuseIdentifier:customCellIdentifier];
         cell = (LWPathCell *) [tableView dequeueReusableCellWithIdentifier:customCellIdentifier];
     }
-//    static NSString *CellIdentifier = @"Cell";
-//    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        
-//        cell = [[MMCenterTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
-//    }
-//    
-//    cell.textLabel.text = @"Path";
     
+//    [cell.icon setImage:[UIImage imageNamed:@"sampleMapImage.png"]];
+//    cell.ratingLabel.text = @"";
+//    cell.priceLabel.text = @"";
+//    cell.lastUserName.text = @"";
+//    cell.appName.text = @"Path 1";
+//    cell.allUsersLabel.text = @"Test";
+//    cell.appName.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.55];
+//    cell.lastUserName.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.55];
+//    cell.priceLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.55];
+//    cell.ratingLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.55];
+//    cell.allUsersLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.55];
+//    
+//    cell.icon.layer.cornerRadius = 15.0;
+//    cell.icon.layer.masksToBounds = YES;
+//    cell.icon.layer.borderColor = [UIColor lightGrayColor].CGColor;
+//    cell.icon.layer.borderWidth = 5.5;
+
     return cell;
 }
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    switch (section) {
-        case LWCenterViewControllerSectionPopular:
-            return @"Popular";
-        case LWCenterViewControllerSectionMy:
-            return @"My Paths";
-        case LWCenterViewControllerSectionSocial:
-            return @"Social";
-        case LWCenterViewControllerSectionFeatured:
-            return @"Staff Picked";
-        default:
-            return nil;
-            break;
-    }
+    return self.title;
 }
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 150;
-}
-
 
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     UIView * containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.tableView.bounds), 30)];
@@ -209,17 +187,21 @@ typedef NS_ENUM(NSInteger, LWCenterViewControllerSection){
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     LWMapViewController * center = [[LWMapViewController alloc] init];
-    center.title = @"Popular";
     UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:center];
+    
     [self.mm_drawerController
      setCenterViewController:nav
      withCloseAnimation:YES
      completion:nil];
-
+    
+    
+    
     
     [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
 }
 
 #pragma mark - Button Handlers
