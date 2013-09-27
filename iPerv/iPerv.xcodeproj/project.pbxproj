@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE80E6C717F5432300D3D0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6C617F5432200D3D0FF /* Foundation.framework */; };
+		BE80E6C917F5432300D3D0FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6C817F5432300D3D0FF /* CoreGraphics.framework */; };
+		BE80E6CB17F5432300D3D0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6CA17F5432300D3D0FF /* UIKit.framework */; };
+		BE80E6D117F5432300D3D0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE80E6CF17F5432300D3D0FF /* InfoPlist.strings */; };
+		BE80E6D317F5432300D3D0FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E6D217F5432300D3D0FF /* main.m */; };
+		BE80E6D717F5432300D3D0FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E6D617F5432300D3D0FF /* AppDelegate.m */; };
+		BE80E6DA17F5432300D3D0FF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE80E6D817F5432300D3D0FF /* Main_iPhone.storyboard */; };
+		BE80E6DD17F5432300D3D0FF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE80E6DB17F5432300D3D0FF /* Main_iPad.storyboard */; };
+		BE80E6E017F5432300D3D0FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E6DF17F5432300D3D0FF /* ViewController.m */; };
+		BE80E6E217F5432300D3D0FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE80E6E117F5432300D3D0FF /* Images.xcassets */; };
+		BE80E6E917F5432300D3D0FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6E817F5432300D3D0FF /* XCTest.framework */; };
+		BE80E6EA17F5432300D3D0FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6C617F5432200D3D0FF /* Foundation.framework */; };
+		BE80E6EB17F5432300D3D0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6CA17F5432300D3D0FF /* UIKit.framework */; };
+		BE80E6F317F5432300D3D0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE80E6F117F5432300D3D0FF /* InfoPlist.strings */; };
+		BE80E6F517F5432300D3D0FF /* iPervTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E6F417F5432300D3D0FF /* iPervTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE80E6EC17F5432300D3D0FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE80E6BB17F5432200D3D0FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE80E6C217F5432200D3D0FF;
+			remoteInfo = iPerv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE80E6C317F5432200D3D0FF /* iPerv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPerv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE80E6C617F5432200D3D0FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE80E6C817F5432300D3D0FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE80E6CA17F5432300D3D0FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE80E6CE17F5432300D3D0FF /* iPerv-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPerv-Info.plist"; sourceTree = "<group>"; };
+		BE80E6D017F5432300D3D0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE80E6D217F5432300D3D0FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE80E6D417F5432300D3D0FF /* iPerv-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPerv-Prefix.pch"; sourceTree = "<group>"; };
+		BE80E6D517F5432300D3D0FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE80E6D617F5432300D3D0FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE80E6D917F5432300D3D0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		BE80E6DC17F5432300D3D0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		BE80E6DE17F5432300D3D0FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE80E6DF17F5432300D3D0FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE80E6E117F5432300D3D0FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE80E6E717F5432300D3D0FF /* iPervTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPervTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE80E6E817F5432300D3D0FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BE80E6F017F5432300D3D0FF /* iPervTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPervTests-Info.plist"; sourceTree = "<group>"; };
+		BE80E6F217F5432300D3D0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE80E6F417F5432300D3D0FF /* iPervTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPervTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE80E6C017F5432200D3D0FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE80E6C917F5432300D3D0FF /* CoreGraphics.framework in Frameworks */,
+				BE80E6CB17F5432300D3D0FF /* UIKit.framework in Frameworks */,
+				BE80E6C717F5432300D3D0FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE80E6E417F5432300D3D0FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE80E6E917F5432300D3D0FF /* XCTest.framework in Frameworks */,
+				BE80E6EB17F5432300D3D0FF /* UIKit.framework in Frameworks */,
+				BE80E6EA17F5432300D3D0FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE80E6BA17F5432200D3D0FF = {
+			isa = PBXGroup;
+			children = (
+				BE80E6CC17F5432300D3D0FF /* iPerv */,
+				BE80E6EE17F5432300D3D0FF /* iPervTests */,
+				BE80E6C517F5432200D3D0FF /* Frameworks */,
+				BE80E6C417F5432200D3D0FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE80E6C417F5432200D3D0FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE80E6C317F5432200D3D0FF /* iPerv.app */,
+				BE80E6E717F5432300D3D0FF /* iPervTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE80E6C517F5432200D3D0FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE80E6C617F5432200D3D0FF /* Foundation.framework */,
+				BE80E6C817F5432300D3D0FF /* CoreGraphics.framework */,
+				BE80E6CA17F5432300D3D0FF /* UIKit.framework */,
+				BE80E6E817F5432300D3D0FF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE80E6CC17F5432300D3D0FF /* iPerv */ = {
+			isa = PBXGroup;
+			children = (
+				BE80E6D517F5432300D3D0FF /* AppDelegate.h */,
+				BE80E6D617F5432300D3D0FF /* AppDelegate.m */,
+				BE80E6D817F5432300D3D0FF /* Main_iPhone.storyboard */,
+				BE80E6DB17F5432300D3D0FF /* Main_iPad.storyboard */,
+				BE80E6DE17F5432300D3D0FF /* ViewController.h */,
+				BE80E6DF17F5432300D3D0FF /* ViewController.m */,
+				BE80E6E117F5432300D3D0FF /* Images.xcassets */,
+				BE80E6CD17F5432300D3D0FF /* Supporting Files */,
+			);
+			path = iPerv;
+			sourceTree = "<group>";
+		};
+		BE80E6CD17F5432300D3D0FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE80E6CE17F5432300D3D0FF /* iPerv-Info.plist */,
+				BE80E6CF17F5432300D3D0FF /* InfoPlist.strings */,
+				BE80E6D217F5432300D3D0FF /* main.m */,
+				BE80E6D417F5432300D3D0FF /* iPerv-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE80E6EE17F5432300D3D0FF /* iPervTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE80E6F417F5432300D3D0FF /* iPervTests.m */,
+				BE80E6EF17F5432300D3D0FF /* Supporting Files */,
+			);
+			path = iPervTests;
+			sourceTree = "<group>";
+		};
+		BE80E6EF17F5432300D3D0FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE80E6F017F5432300D3D0FF /* iPervTests-Info.plist */,
+				BE80E6F117F5432300D3D0FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE80E6C217F5432200D3D0FF /* iPerv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE80E6F817F5432300D3D0FF /* Build configuration list for PBXNativeTarget "iPerv" */;
+			buildPhases = (
+				BE80E6BF17F5432200D3D0FF /* Sources */,
+				BE80E6C017F5432200D3D0FF /* Frameworks */,
+				BE80E6C117F5432200D3D0FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPerv;
+			productName = iPerv;
+			productReference = BE80E6C317F5432200D3D0FF /* iPerv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE80E6E617F5432300D3D0FF /* iPervTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE80E6FB17F5432300D3D0FF /* Build configuration list for PBXNativeTarget "iPervTests" */;
+			buildPhases = (
+				BE80E6E317F5432300D3D0FF /* Sources */,
+				BE80E6E417F5432300D3D0FF /* Frameworks */,
+				BE80E6E517F5432300D3D0FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE80E6ED17F5432300D3D0FF /* PBXTargetDependency */,
+			);
+			name = iPervTests;
+			productName = iPervTests;
+			productReference = BE80E6E717F5432300D3D0FF /* iPervTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE80E6BB17F5432200D3D0FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = TapSense;
+				TargetAttributes = {
+					BE80E6E617F5432300D3D0FF = {
+						TestTargetID = BE80E6C217F5432200D3D0FF;
+					};
+				};
+			};
+			buildConfigurationList = BE80E6BE17F5432200D3D0FF /* Build configuration list for PBXProject "iPerv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE80E6BA17F5432200D3D0FF;
+			productRefGroup = BE80E6C417F5432200D3D0FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE80E6C217F5432200D3D0FF /* iPerv */,
+				BE80E6E617F5432300D3D0FF /* iPervTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE80E6C117F5432200D3D0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE80E6DD17F5432300D3D0FF /* Main_iPad.storyboard in Resources */,
+				BE80E6E217F5432300D3D0FF /* Images.xcassets in Resources */,
+				BE80E6DA17F5432300D3D0FF /* Main_iPhone.storyboard in Resources */,
+				BE80E6D117F5432300D3D0FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE80E6E517F5432300D3D0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE80E6F317F5432300D3D0FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE80E6BF17F5432200D3D0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE80E6E017F5432300D3D0FF /* ViewController.m in Sources */,
+				BE80E6D717F5432300D3D0FF /* AppDelegate.m in Sources */,
+				BE80E6D317F5432300D3D0FF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE80E6E317F5432300D3D0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE80E6F517F5432300D3D0FF /* iPervTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE80E6ED17F5432300D3D0FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE80E6C217F5432200D3D0FF /* iPerv */;
+			targetProxy = BE80E6EC17F5432300D3D0FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE80E6CF17F5432300D3D0FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE80E6D017F5432300D3D0FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE80E6D817F5432300D3D0FF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE80E6D917F5432300D3D0FF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BE80E6DB17F5432300D3D0FF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE80E6DC17F5432300D3D0FF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		BE80E6F117F5432300D3D0FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE80E6F217F5432300D3D0FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE80E6F617F5432300D3D0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE80E6F717F5432300D3D0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE80E6F917F5432300D3D0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPerv/iPerv-Prefix.pch";
+				INFOPLIST_FILE = "iPerv/iPerv-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE80E6FA17F5432300D3D0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPerv/iPerv-Prefix.pch";
+				INFOPLIST_FILE = "iPerv/iPerv-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BE80E6FC17F5432300D3D0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iPerv.app/iPerv";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPerv/iPerv-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iPervTests/iPervTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BE80E6FD17F5432300D3D0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iPerv.app/iPerv";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iPerv/iPerv-Prefix.pch";
+				INFOPLIST_FILE = "iPervTests/iPervTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE80E6BE17F5432200D3D0FF /* Build configuration list for PBXProject "iPerv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE80E6F617F5432300D3D0FF /* Debug */,
+				BE80E6F717F5432300D3D0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE80E6F817F5432300D3D0FF /* Build configuration list for PBXNativeTarget "iPerv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE80E6F917F5432300D3D0FF /* Debug */,
+				BE80E6FA17F5432300D3D0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE80E6FB17F5432300D3D0FF /* Build configuration list for PBXNativeTarget "iPervTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE80E6FC17F5432300D3D0FF /* Debug */,
+				BE80E6FD17F5432300D3D0FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE80E6BB17F5432200D3D0FF /* Project object */;
+}
