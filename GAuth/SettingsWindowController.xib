@@ -5,11 +5,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4510"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="SettingsWindowController"/>
+        <customObject id="-2" userLabel="File's Owner" customClass="SettingsWindowController">
+            <connections>
+                <outlet property="secretKey" destination="qzN-Fq-9N6" id="gMR-TK-hI5"/>
+                <outlet property="shortcutView" destination="VFA-0U-21q" id="l9I-Za-q8s"/>
+            </connections>
+        </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <window title="GAuth" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" frameAutosaveName="DemoWindow" animationBehavior="default" id="4h4-4q-7ga">
+        <window title="GAuth" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="DemoWindow" animationBehavior="default" id="4h4-4q-7ga">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" managed="YES"/>
             <rect key="contentRect" x="335" y="390" width="297" height="119"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" id="WvU-Kq-KqK">
@@ -56,6 +62,9 @@
                                 <string>NSAllRomanInputSourcesLocaleIdentifier</string>
                             </allowedInputSourceLocales>
                         </secureTextFieldCell>
+                        <connections>
+                            <action selector="enterSecretKey:" target="-2" id="3hn-GT-CgI"/>
+                        </connections>
                     </secureTextField>
                 </subviews>
             </view>

@@ -7,7 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MASShortcutView+UserDefaults.h"
 
 @interface SettingsWindowController : NSWindowController
+
+@property (nonatomic, weak) IBOutlet MASShortcutView *shortcutView;
+@property (nonatomic, getter = isShortcutEnabled) BOOL shortcutEnabled;
+@property (nonatomic, getter = isConstantShortcutEnabled) BOOL constantShortcutEnabled;
+@property (weak) IBOutlet NSSecureTextField *secretKey;
+@property (nonatomic, strong) NSString *secretKeyString;
 
 @end

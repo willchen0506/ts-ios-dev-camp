@@ -15,6 +15,7 @@
 		BE213C7A17FB2EFD00986004 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7517FB2EFD00986004 /* MASShortcutView+UserDefaults.m */; };
 		BE213C8D17FB3A9E00986004 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C8B17FB3A9E00986004 /* SettingsWindowController.m */; };
 		BE213C8E17FB3A9E00986004 /* SettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE213C8C17FB3A9E00986004 /* SettingsWindowController.xib */; };
+		BE213C9017FB3FA800986004 /* ts.png in Resources */ = {isa = PBXBuildFile; fileRef = BE213C8F17FB3FA800986004 /* ts.png */; };
 		BE833E3C17F5EBBE00469862 /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3317F5EBBE00469862 /* AGBase32.m */; };
 		BE833E3D17F5EBBE00469862 /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3517F5EBBE00469862 /* AGClock.m */; };
 		BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3717F5EBBE00469862 /* AGOtp.m */; };
@@ -42,6 +43,7 @@
 		BE213C8A17FB3A9E00986004 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
 		BE213C8B17FB3A9E00986004 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
 		BE213C8C17FB3A9E00986004 /* SettingsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindowController.xib; sourceTree = "<group>"; };
+		BE213C8F17FB3FA800986004 /* ts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ts.png; sourceTree = "<group>"; };
 		BE833E2F17F5EBBE00469862 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		BE833E3117F5EBBE00469862 /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroGearOTP.h; sourceTree = "<group>"; };
 		BE833E3217F5EBBE00469862 /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBase32.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		D7FB691315A6E9FF00239C16 = {
 			isa = PBXGroup;
 			children = (
+				BE213C8F17FB3FA800986004 /* ts.png */,
 				BE833E2E17F5EBBE00469862 /* aerogear-otp.ios */,
 				D7FB696015A6FE4900239C16 /* MASShortcut */,
 				D7FB694715A6F61900239C16 /* Controllers */,
@@ -242,6 +245,7 @@
 			files = (
 				BE213C8E17FB3A9E00986004 /* SettingsWindowController.xib in Resources */,
 				D7FB695415A6FC3300239C16 /* MainMenu.xib in Resources */,
+				BE213C9017FB3FA800986004 /* ts.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
