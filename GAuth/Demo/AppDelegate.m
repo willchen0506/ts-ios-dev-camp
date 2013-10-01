@@ -43,10 +43,8 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
 
 #pragma mark -
 - (IBAction)showMenu:(id)sender {
-    self.settingsVC = [[SettingsViewController alloc] initWithNibName:@"Settings" bundle:nil];
-    [self.window.contentView addSubview:self.settingsVC.view];
-    self.settingsVC.view.frame = ((NSView*)self.window.contentView).bounds;
-    [self.window orderFront:sender];
+    self.settingsWC = [[SettingsWindowController alloc] initWithWindowNibName:@"SettingsWindowController"];
+    [self.settingsWC showWindow:self];
     NSLog(@"123");
 }
 - (IBAction)exitApp:(id)sender {
@@ -90,7 +88,7 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
-    return YES;
+    return NO;
 }
 
 #pragma mark - Custom shortcut

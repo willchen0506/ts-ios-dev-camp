@@ -1,4 +1,4 @@
-#import "SettingsViewController.h"
+#import "SettingsWindowController.h"
 
 @class MASShortcutView;
 
@@ -12,6 +12,6 @@
 @property (nonatomic, strong) NSString *secretKeyString;
 @property (nonatomic, strong) IBOutlet NSMenu *statusMenu;
 @property (nonatomic, strong) NSStatusItem * statusItem;
-@property (nonatomic, strong) SettingsViewController *settingsVC;
+@property (nonatomic, strong) SettingsWindowController *settingsWC;
 
 @end
