@@ -110,7 +110,6 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
             NSString *otp = [agtotp now];
             NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
             [pasteBoard declareTypes:[NSArray arrayWithObjects:NSStringPboardType, nil] owner:nil];
-            
             [pasteBoard setString:otp forType:NSStringPboardType];
         }];
     }
@@ -120,7 +119,8 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
 }
 - (IBAction)enterSecretKey:(id)sender {
     [[NSUserDefaults standardUserDefaults] setObject:self.secretKey.stringValue forKey:@"secret"];
-
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Secret Saved!" defaultButton:@"OK" alternateButton:nil       otherButton:nil informativeTextWithFormat:@""];
+    [alert runModal];
 }
 
 #pragma mark - Constant shortcut
