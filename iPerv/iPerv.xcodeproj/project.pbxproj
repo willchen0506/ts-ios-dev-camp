@@ -22,6 +22,11 @@
 		BE80E6EB17F5432300D3D0FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E6CA17F5432300D3D0FF /* UIKit.framework */; };
 		BE80E6F317F5432300D3D0FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE80E6F117F5432300D3D0FF /* InfoPlist.strings */; };
 		BE80E6F517F5432300D3D0FF /* iPervTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E6F417F5432300D3D0FF /* iPervTests.m */; };
+		BE80E70017F54F9D00D3D0FF /* SessionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E6FF17F54F9D00D3D0FF /* SessionContainer.m */; };
+		BE80E70217F55C8C00D3D0FF /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E70117F55C8C00D3D0FF /* MultipeerConnectivity.framework */; };
+		BE80E70517F56FEE00D3D0FF /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E70417F56FEE00D3D0FF /* LocationManager.m */; };
+		BE80E70717F5712200D3D0FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE80E70617F5712200D3D0FF /* CoreLocation.framework */; };
+		BE80E70D17F5838100D3D0FF /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80E70C17F5838100D3D0FF /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,14 @@
 		BE80E6F017F5432300D3D0FF /* iPervTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPervTests-Info.plist"; sourceTree = "<group>"; };
 		BE80E6F217F5432300D3D0FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE80E6F417F5432300D3D0FF /* iPervTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPervTests.m; sourceTree = "<group>"; };
+		BE80E6FE17F54F9D00D3D0FF /* SessionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionContainer.h; sourceTree = "<group>"; };
+		BE80E6FF17F54F9D00D3D0FF /* SessionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionContainer.m; sourceTree = "<group>"; };
+		BE80E70117F55C8C00D3D0FF /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		BE80E70317F56FEE00D3D0FF /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		BE80E70417F56FEE00D3D0FF /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		BE80E70617F5712200D3D0FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BE80E70B17F5838100D3D0FF /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		BE80E70C17F5838100D3D0FF /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE80E70717F5712200D3D0FF /* CoreLocation.framework in Frameworks */,
+				BE80E70217F55C8C00D3D0FF /* MultipeerConnectivity.framework in Frameworks */,
 				BE80E6C917F5432300D3D0FF /* CoreGraphics.framework in Frameworks */,
 				BE80E6CB17F5432300D3D0FF /* UIKit.framework in Frameworks */,
 				BE80E6C717F5432300D3D0FF /* Foundation.framework in Frameworks */,
@@ -103,6 +118,8 @@
 		BE80E6C517F5432200D3D0FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE80E70617F5712200D3D0FF /* CoreLocation.framework */,
+				BE80E70117F55C8C00D3D0FF /* MultipeerConnectivity.framework */,
 				BE80E6C617F5432200D3D0FF /* Foundation.framework */,
 				BE80E6C817F5432300D3D0FF /* CoreGraphics.framework */,
 				BE80E6CA17F5432300D3D0FF /* UIKit.framework */,
@@ -114,12 +131,18 @@
 		BE80E6CC17F5432300D3D0FF /* iPerv */ = {
 			isa = PBXGroup;
 			children = (
+				BE80E70B17F5838100D3D0FF /* Item.h */,
+				BE80E70C17F5838100D3D0FF /* Item.m */,
+				BE80E6FE17F54F9D00D3D0FF /* SessionContainer.h */,
+				BE80E6FF17F54F9D00D3D0FF /* SessionContainer.m */,
 				BE80E6D517F5432300D3D0FF /* AppDelegate.h */,
 				BE80E6D617F5432300D3D0FF /* AppDelegate.m */,
 				BE80E6D817F5432300D3D0FF /* Main_iPhone.storyboard */,
 				BE80E6DB17F5432300D3D0FF /* Main_iPad.storyboard */,
 				BE80E6DE17F5432300D3D0FF /* ViewController.h */,
 				BE80E6DF17F5432300D3D0FF /* ViewController.m */,
+				BE80E70317F56FEE00D3D0FF /* LocationManager.h */,
+				BE80E70417F56FEE00D3D0FF /* LocationManager.m */,
 				BE80E6E117F5432300D3D0FF /* Images.xcassets */,
 				BE80E6CD17F5432300D3D0FF /* Supporting Files */,
 			);
@@ -253,6 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE80E70D17F5838100D3D0FF /* Item.m in Sources */,
+				BE80E70017F54F9D00D3D0FF /* SessionContainer.m in Sources */,
+				BE80E70517F56FEE00D3D0FF /* LocationManager.m in Sources */,
 				BE80E6E017F5432300D3D0FF /* ViewController.m in Sources */,
 				BE80E6D717F5432300D3D0FF /* AppDelegate.m in Sources */,
 				BE80E6D317F5432300D3D0FF /* main.m in Sources */,
