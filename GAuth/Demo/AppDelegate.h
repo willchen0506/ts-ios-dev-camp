@@ -8,5 +8,7 @@
 @property (nonatomic, getter = isConstantShortcutEnabled) BOOL constantShortcutEnabled;
 @property (weak) IBOutlet NSSecureTextField *secretKey;
 @property (nonatomic, strong) NSString *secretKeyString;
+@property (nonatomic, strong) IBOutlet NSMenu *statusMenu;
+@property (nonatomic, strong) NSStatusItem * statusItem;
 
 @end

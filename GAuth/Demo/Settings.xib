@@ -647,28 +647,71 @@
                 </menuItem>
             </items>
         </menu>
+        <window title="GAuth" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="DemoWindow" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="335" y="390" width="295" height="128"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="536" customClass="MASShortcutView">
+                        <rect key="frame" x="58" y="67" width="180" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
+                    <button horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" id="579">
+                        <rect key="frame" x="18" y="92" width="260" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Global hotkey to open the GAuth alert" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="580">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="494" name="value" keyPath="shortcutEnabled" id="638"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="p69-R6-JcJ">
+                        <rect key="frame" x="35" y="50" width="244" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Enter Secret Key" id="8Ne-lc-Un8">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="TkK-ZM-hA3">
+                        <rect key="frame" x="220" y="14" width="63" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0Wl-wn-673">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="enterSecretKey:" target="494" id="N1j-k1-K6o"/>
+                        </connections>
+                    </button>
+                    <secureTextField verticalHuggingPriority="750" id="qN7-Oj-kud">
+                        <rect key="frame" x="38" y="22" width="180" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="dRE-Eg-UsM">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <allowedInputSourceLocales>
+                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                            </allowedInputSourceLocales>
+                        </secureTextFieldCell>
+                    </secureTextField>
+                </subviews>
+            </view>
+        </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
-                <outlet property="statusMenu" destination="rHT-BT-y7i" id="jF2-6n-0Jy"/>
+                <outlet property="secretKey" destination="qN7-Oj-kud" id="OD6-jf-ssR"/>
+                <outlet property="shortcutView" destination="536" id="548"/>
+                <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <menu id="rHT-BT-y7i">
-            <items>
-                <menuItem title="Settings" id="ETr-SA-W1H">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="showMenu:" target="494" id="MVW-9s-7d5"/>
-                    </connections>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="av8-rV-m8q"/>
-                <menuItem title="Exit" id="w7Y-BB-767">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="exitApp:" target="494" id="2gU-Rm-Khg"/>
-                    </connections>
-                </menuItem>
-            </items>
-        </menu>
     </objects>
 </document>

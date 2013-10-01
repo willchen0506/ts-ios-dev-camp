@@ -44,18 +44,30 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
 @synthesize shortcutView = _shortcutView;
 
 #pragma mark -
+- (IBAction)showMenu:(id)sender {
+    NSLog(@"123");
+}
+- (IBAction)exitApp:(id)sender {
+    exit(0);
+}
 
 - (void)awakeFromNib
 {
+
     [super awakeFromNib];
     
-    self.secretKeyString =[[NSUserDefaults standardUserDefaults] stringForKey:@"secret"];
-    if (self.secretKeyString == nil){
-        self.secretKeyString = @"Please set your secret key";
-    }
-    [self.secretKey setStringValue:self.secretKeyString];
-    // Checkbox will enable and disable the shortcut view
-    [self.shortcutView bind:@"enabled" toObject:self withKeyPath:@"shortcutEnabled" options:nil];
+    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] ;
+    [self.statusItem setMenu:self.statusMenu];
+    [self.statusItem setTitle:@"G"];
+    [self.statusItem setHighlightMode:YES];
+    
+//    self.secretKeyString =[[NSUserDefaults standardUserDefaults] stringForKey:@"secret"];
+//    if (self.secretKeyString == nil){
+//        self.secretKeyString = @"";
+//    }
+//    [self.secretKey setStringValue:self.secretKeyString];
+//    // Checkbox will enable and disable the shortcut view
+//    [self.shortcutView bind:@"enabled" toObject:self withKeyPath:@"shortcutEnabled" options:nil];
 }
 
 - (void)dealloc

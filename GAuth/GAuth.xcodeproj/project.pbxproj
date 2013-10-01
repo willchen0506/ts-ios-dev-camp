@@ -8,25 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		BE06974617F5C6FE00F02539 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE06974517F5C6FE00F02539 /* Security.framework */; };
+		BE213C7617FB2EFD00986004 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C6D17FB2EFD00986004 /* MASShortcut.m */; };
+		BE213C7717FB2EFD00986004 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C6F17FB2EFD00986004 /* MASShortcut+Monitoring.m */; };
+		BE213C7817FB2EFD00986004 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7117FB2EFD00986004 /* MASShortcut+UserDefaults.m */; };
+		BE213C7917FB2EFD00986004 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7317FB2EFD00986004 /* MASShortcutView.m */; };
+		BE213C7A17FB2EFD00986004 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7517FB2EFD00986004 /* MASShortcutView+UserDefaults.m */; };
 		BE833E3C17F5EBBE00469862 /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3317F5EBBE00469862 /* AGBase32.m */; };
 		BE833E3D17F5EBBE00469862 /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3517F5EBBE00469862 /* AGClock.m */; };
 		BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3717F5EBBE00469862 /* AGOtp.m */; };
 		BE833E3F17F5EBBE00469862 /* AGStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3917F5EBBE00469862 /* AGStringEncoding.m */; };
 		BE833E4017F5EBBE00469862 /* AGTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3B17F5EBBE00469862 /* AGTotp.m */; };
-		D71519301609CA1B005AAD95 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */; };
 		D7FB692315A6E9FF00239C16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB692215A6E9FF00239C16 /* Cocoa.framework */; };
 		D7FB694615A6F5D300239C16 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB694515A6F5D300239C16 /* Carbon.framework */; };
 		D7FB695215A6FC2A00239C16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695115A6FC2A00239C16 /* AppDelegate.m */; };
 		D7FB695415A6FC3300239C16 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FB695315A6FC3300239C16 /* MainMenu.xib */; };
 		D7FB695915A6FC3E00239C16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695715A6FC3E00239C16 /* main.m */; };
-		D7FB695E15A6FE4500239C16 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695B15A6FE4500239C16 /* MASShortcut.m */; };
-		D7FB695F15A6FE4500239C16 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695D15A6FE4500239C16 /* MASShortcutView.m */; };
-		D7FB696315A70DA500239C16 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB696215A70DA500239C16 /* MASShortcutView+UserDefaults.m */; };
-		D7FB696E15A7435C00239C16 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB696D15A7435C00239C16 /* MASShortcut+UserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE06974517F5C6FE00F02539 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE213C6C17FB2EFD00986004 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcut.h; sourceTree = "<group>"; };
+		BE213C6D17FB2EFD00986004 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcut.m; sourceTree = "<group>"; };
+		BE213C6E17FB2EFD00986004 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		BE213C6F17FB2EFD00986004 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		BE213C7017FB2EFD00986004 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		BE213C7117FB2EFD00986004 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+		BE213C7217FB2EFD00986004 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASShortcutView.h; sourceTree = "<group>"; };
+		BE213C7317FB2EFD00986004 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
+		BE213C7417FB2EFD00986004 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		BE213C7517FB2EFD00986004 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
 		BE833E2F17F5EBBE00469862 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		BE833E3117F5EBBE00469862 /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroGearOTP.h; sourceTree = "<group>"; };
 		BE833E3217F5EBBE00469862 /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBase32.h; sourceTree = "<group>"; };
@@ -39,8 +49,6 @@
 		BE833E3917F5EBBE00469862 /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGStringEncoding.m; sourceTree = "<group>"; };
 		BE833E3A17F5EBBE00469862 /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTotp.h; sourceTree = "<group>"; };
 		BE833E3B17F5EBBE00469862 /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTotp.m; sourceTree = "<group>"; };
-		D715192E1609CA1B005AAD95 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcut+Monitoring.h"; path = "MASShortcut/MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
-		D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcut+Monitoring.m"; path = "MASShortcut/MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
 		D7FB691E15A6E9FF00239C16 /* GAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FB692215A6E9FF00239C16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D7FB692515A6E9FF00239C16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -52,14 +60,6 @@
 		D7FB695515A6FC3E00239C16 /* GAuth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GAuth-Info.plist"; path = "Demo/GAuth-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D7FB695615A6FC3E00239C16 /* GAuth-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GAuth-Prefix.pch"; path = "Demo/GAuth-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		D7FB695715A6FC3E00239C16 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Demo/main.m; sourceTree = SOURCE_ROOT; };
-		D7FB695A15A6FE4500239C16 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASShortcut.h; path = MASShortcut/MASShortcut.h; sourceTree = "<group>"; };
-		D7FB695B15A6FE4500239C16 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASShortcut.m; path = MASShortcut/MASShortcut.m; sourceTree = "<group>"; };
-		D7FB695C15A6FE4500239C16 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASShortcutView.h; path = MASShortcut/MASShortcutView.h; sourceTree = "<group>"; };
-		D7FB695D15A6FE4500239C16 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASShortcutView.m; path = MASShortcut/MASShortcutView.m; sourceTree = "<group>"; };
-		D7FB696115A70DA500239C16 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcutView+UserDefaults.h"; path = "MASShortcut/MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
-		D7FB696215A70DA500239C16 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcutView+UserDefaults.m"; path = "MASShortcut/MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
-		D7FB696415A7299800239C16 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcut+UserDefaults.h"; path = "MASShortcut/MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
-		D7FB696D15A7435C00239C16 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcut+UserDefaults.m"; path = "MASShortcut/MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,16 +167,16 @@
 		D7FB696015A6FE4900239C16 /* MASShortcut */ = {
 			isa = PBXGroup;
 			children = (
-				D7FB695A15A6FE4500239C16 /* MASShortcut.h */,
-				D7FB695B15A6FE4500239C16 /* MASShortcut.m */,
-				D7FB695C15A6FE4500239C16 /* MASShortcutView.h */,
-				D7FB695D15A6FE4500239C16 /* MASShortcutView.m */,
-				D7FB696115A70DA500239C16 /* MASShortcutView+UserDefaults.h */,
-				D7FB696215A70DA500239C16 /* MASShortcutView+UserDefaults.m */,
-				D7FB696415A7299800239C16 /* MASShortcut+UserDefaults.h */,
-				D7FB696D15A7435C00239C16 /* MASShortcut+UserDefaults.m */,
-				D715192E1609CA1B005AAD95 /* MASShortcut+Monitoring.h */,
-				D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */,
+				BE213C6C17FB2EFD00986004 /* MASShortcut.h */,
+				BE213C6D17FB2EFD00986004 /* MASShortcut.m */,
+				BE213C6E17FB2EFD00986004 /* MASShortcut+Monitoring.h */,
+				BE213C6F17FB2EFD00986004 /* MASShortcut+Monitoring.m */,
+				BE213C7017FB2EFD00986004 /* MASShortcut+UserDefaults.h */,
+				BE213C7117FB2EFD00986004 /* MASShortcut+UserDefaults.m */,
+				BE213C7217FB2EFD00986004 /* MASShortcutView.h */,
+				BE213C7317FB2EFD00986004 /* MASShortcutView.m */,
+				BE213C7417FB2EFD00986004 /* MASShortcutView+UserDefaults.h */,
+				BE213C7517FB2EFD00986004 /* MASShortcutView+UserDefaults.m */,
 			);
 			name = MASShortcut;
 			sourceTree = "<group>";
@@ -243,18 +243,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE213C7617FB2EFD00986004 /* MASShortcut.m in Sources */,
 				D7FB695215A6FC2A00239C16 /* AppDelegate.m in Sources */,
 				BE833E3C17F5EBBE00469862 /* AGBase32.m in Sources */,
+				BE213C7817FB2EFD00986004 /* MASShortcut+UserDefaults.m in Sources */,
+				BE213C7917FB2EFD00986004 /* MASShortcutView.m in Sources */,
 				D7FB695915A6FC3E00239C16 /* main.m in Sources */,
 				BE833E3D17F5EBBE00469862 /* AGClock.m in Sources */,
 				BE833E3F17F5EBBE00469862 /* AGStringEncoding.m in Sources */,
 				BE833E4017F5EBBE00469862 /* AGTotp.m in Sources */,
-				D7FB695E15A6FE4500239C16 /* MASShortcut.m in Sources */,
-				D7FB695F15A6FE4500239C16 /* MASShortcutView.m in Sources */,
-				D7FB696315A70DA500239C16 /* MASShortcutView+UserDefaults.m in Sources */,
+				BE213C7717FB2EFD00986004 /* MASShortcut+Monitoring.m in Sources */,
+				BE213C7A17FB2EFD00986004 /* MASShortcutView+UserDefaults.m in Sources */,
 				BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */,
-				D7FB696E15A7435C00239C16 /* MASShortcut+UserDefaults.m in Sources */,
-				D71519301609CA1B005AAD95 /* MASShortcut+Monitoring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
