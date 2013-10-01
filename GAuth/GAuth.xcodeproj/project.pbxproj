@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE06974617F5C6FE00F02539 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE06974517F5C6FE00F02539 /* Security.framework */; };
+		BE833E3C17F5EBBE00469862 /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3317F5EBBE00469862 /* AGBase32.m */; };
+		BE833E3D17F5EBBE00469862 /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3517F5EBBE00469862 /* AGClock.m */; };
+		BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3717F5EBBE00469862 /* AGOtp.m */; };
+		BE833E3F17F5EBBE00469862 /* AGStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3917F5EBBE00469862 /* AGStringEncoding.m */; };
+		BE833E4017F5EBBE00469862 /* AGTotp.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3B17F5EBBE00469862 /* AGTotp.m */; };
+		D71519301609CA1B005AAD95 /* MASShortcut+Monitoring.m in Sources */ = {isa = PBXBuildFile; fileRef = D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */; };
+		D7FB692315A6E9FF00239C16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB692215A6E9FF00239C16 /* Cocoa.framework */; };
+		D7FB694615A6F5D300239C16 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB694515A6F5D300239C16 /* Carbon.framework */; };
+		D7FB695215A6FC2A00239C16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695115A6FC2A00239C16 /* AppDelegate.m */; };
+		D7FB695415A6FC3300239C16 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FB695315A6FC3300239C16 /* MainMenu.xib */; };
+		D7FB695915A6FC3E00239C16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695715A6FC3E00239C16 /* main.m */; };
+		D7FB695E15A6FE4500239C16 /* MASShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695B15A6FE4500239C16 /* MASShortcut.m */; };
+		D7FB695F15A6FE4500239C16 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB695D15A6FE4500239C16 /* MASShortcutView.m */; };
+		D7FB696315A70DA500239C16 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB696215A70DA500239C16 /* MASShortcutView+UserDefaults.m */; };
+		D7FB696E15A7435C00239C16 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB696D15A7435C00239C16 /* MASShortcut+UserDefaults.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE06974517F5C6FE00F02539 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE833E2F17F5EBBE00469862 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
+		BE833E3117F5EBBE00469862 /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroGearOTP.h; sourceTree = "<group>"; };
+		BE833E3217F5EBBE00469862 /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBase32.h; sourceTree = "<group>"; };
+		BE833E3317F5EBBE00469862 /* AGBase32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBase32.m; sourceTree = "<group>"; };
+		BE833E3417F5EBBE00469862 /* AGClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGClock.h; sourceTree = "<group>"; };
+		BE833E3517F5EBBE00469862 /* AGClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGClock.m; sourceTree = "<group>"; };
+		BE833E3617F5EBBE00469862 /* AGOtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGOtp.h; sourceTree = "<group>"; };
+		BE833E3717F5EBBE00469862 /* AGOtp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGOtp.m; sourceTree = "<group>"; };
+		BE833E3817F5EBBE00469862 /* AGStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGStringEncoding.h; sourceTree = "<group>"; };
+		BE833E3917F5EBBE00469862 /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGStringEncoding.m; sourceTree = "<group>"; };
+		BE833E3A17F5EBBE00469862 /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTotp.h; sourceTree = "<group>"; };
+		BE833E3B17F5EBBE00469862 /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTotp.m; sourceTree = "<group>"; };
+		D715192E1609CA1B005AAD95 /* MASShortcut+Monitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcut+Monitoring.h"; path = "MASShortcut/MASShortcut+Monitoring.h"; sourceTree = "<group>"; };
+		D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcut+Monitoring.m"; path = "MASShortcut/MASShortcut+Monitoring.m"; sourceTree = "<group>"; };
+		D7FB691E15A6E9FF00239C16 /* GAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB692215A6E9FF00239C16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D7FB692515A6E9FF00239C16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D7FB692715A6E9FF00239C16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7FB694515A6F5D300239C16 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		D7FB695015A6FC2A00239C16 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Demo/AppDelegate.h; sourceTree = "<group>"; };
+		D7FB695115A6FC2A00239C16 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Demo/AppDelegate.m; sourceTree = "<group>"; };
+		D7FB695315A6FC3300239C16 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Demo/MainMenu.xib; sourceTree = "<group>"; };
+		D7FB695515A6FC3E00239C16 /* GAuth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GAuth-Info.plist"; path = "Demo/GAuth-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D7FB695615A6FC3E00239C16 /* GAuth-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GAuth-Prefix.pch"; path = "Demo/GAuth-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		D7FB695715A6FC3E00239C16 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Demo/main.m; sourceTree = SOURCE_ROOT; };
+		D7FB695A15A6FE4500239C16 /* MASShortcut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASShortcut.h; path = MASShortcut/MASShortcut.h; sourceTree = "<group>"; };
+		D7FB695B15A6FE4500239C16 /* MASShortcut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASShortcut.m; path = MASShortcut/MASShortcut.m; sourceTree = "<group>"; };
+		D7FB695C15A6FE4500239C16 /* MASShortcutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASShortcutView.h; path = MASShortcut/MASShortcutView.h; sourceTree = "<group>"; };
+		D7FB695D15A6FE4500239C16 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASShortcutView.m; path = MASShortcut/MASShortcutView.m; sourceTree = "<group>"; };
+		D7FB696115A70DA500239C16 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcutView+UserDefaults.h"; path = "MASShortcut/MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
+		D7FB696215A70DA500239C16 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcutView+UserDefaults.m"; path = "MASShortcut/MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		D7FB696415A7299800239C16 /* MASShortcut+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MASShortcut+UserDefaults.h"; path = "MASShortcut/MASShortcut+UserDefaults.h"; sourceTree = "<group>"; };
+		D7FB696D15A7435C00239C16 /* MASShortcut+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MASShortcut+UserDefaults.m"; path = "MASShortcut/MASShortcut+UserDefaults.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7FB691B15A6E9FF00239C16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE06974617F5C6FE00F02539 /* Security.framework in Frameworks */,
+				D7FB694615A6F5D300239C16 /* Carbon.framework in Frameworks */,
+				D7FB692315A6E9FF00239C16 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE833E2E17F5EBBE00469862 /* aerogear-otp.ios */ = {
+			isa = PBXGroup;
+			children = (
+				BE833E2F17F5EBBE00469862 /* aerogear-otp.ios-Prefix.pch */,
+				BE833E3017F5EBBE00469862 /* Classes */,
+			);
+			path = "aerogear-otp.ios";
+			sourceTree = "<group>";
+		};
+		BE833E3017F5EBBE00469862 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BE833E3117F5EBBE00469862 /* AeroGearOTP.h */,
+				BE833E3217F5EBBE00469862 /* AGBase32.h */,
+				BE833E3317F5EBBE00469862 /* AGBase32.m */,
+				BE833E3417F5EBBE00469862 /* AGClock.h */,
+				BE833E3517F5EBBE00469862 /* AGClock.m */,
+				BE833E3617F5EBBE00469862 /* AGOtp.h */,
+				BE833E3717F5EBBE00469862 /* AGOtp.m */,
+				BE833E3817F5EBBE00469862 /* AGStringEncoding.h */,
+				BE833E3917F5EBBE00469862 /* AGStringEncoding.m */,
+				BE833E3A17F5EBBE00469862 /* AGTotp.h */,
+				BE833E3B17F5EBBE00469862 /* AGTotp.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D7FB691315A6E9FF00239C16 = {
+			isa = PBXGroup;
+			children = (
+				BE833E2E17F5EBBE00469862 /* aerogear-otp.ios */,
+				D7FB696015A6FE4900239C16 /* MASShortcut */,
+				D7FB694715A6F61900239C16 /* Controllers */,
+				D7FB694815A6F62200239C16 /* XIBs */,
+				D7FB692915A6E9FF00239C16 /* Supporting Files */,
+				D7FB692115A6E9FF00239C16 /* Frameworks */,
+				D7FB691F15A6E9FF00239C16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7FB691F15A6E9FF00239C16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB691E15A6E9FF00239C16 /* GAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7FB692115A6E9FF00239C16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE06974517F5C6FE00F02539 /* Security.framework */,
+				D7FB692715A6E9FF00239C16 /* Foundation.framework */,
+				D7FB692515A6E9FF00239C16 /* AppKit.framework */,
+				D7FB694515A6F5D300239C16 /* Carbon.framework */,
+				D7FB692215A6E9FF00239C16 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7FB692915A6E9FF00239C16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB695515A6FC3E00239C16 /* GAuth-Info.plist */,
+				D7FB695615A6FC3E00239C16 /* GAuth-Prefix.pch */,
+				D7FB695715A6FC3E00239C16 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = MASShortcutDemo;
+			sourceTree = "<group>";
+		};
+		D7FB694715A6F61900239C16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB695015A6FC2A00239C16 /* AppDelegate.h */,
+				D7FB695115A6FC2A00239C16 /* AppDelegate.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D7FB694815A6F62200239C16 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB695315A6FC3300239C16 /* MainMenu.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		D7FB696015A6FE4900239C16 /* MASShortcut */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB695A15A6FE4500239C16 /* MASShortcut.h */,
+				D7FB695B15A6FE4500239C16 /* MASShortcut.m */,
+				D7FB695C15A6FE4500239C16 /* MASShortcutView.h */,
+				D7FB695D15A6FE4500239C16 /* MASShortcutView.m */,
+				D7FB696115A70DA500239C16 /* MASShortcutView+UserDefaults.h */,
+				D7FB696215A70DA500239C16 /* MASShortcutView+UserDefaults.m */,
+				D7FB696415A7299800239C16 /* MASShortcut+UserDefaults.h */,
+				D7FB696D15A7435C00239C16 /* MASShortcut+UserDefaults.m */,
+				D715192E1609CA1B005AAD95 /* MASShortcut+Monitoring.h */,
+				D715192F1609CA1B005AAD95 /* MASShortcut+Monitoring.m */,
+			);
+			name = MASShortcut;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7FB691D15A6E9FF00239C16 /* GAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7FB693C15A6E9FF00239C16 /* Build configuration list for PBXNativeTarget "GAuth" */;
+			buildPhases = (
+				D7FB691A15A6E9FF00239C16 /* Sources */,
+				D7FB691B15A6E9FF00239C16 /* Frameworks */,
+				D7FB691C15A6E9FF00239C16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAuth;
+			productName = MASShortcutDemo;
+			productReference = D7FB691E15A6E9FF00239C16 /* GAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7FB691515A6E9FF00239C16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Vadim Shpakovski";
+			};
+			buildConfigurationList = D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "GAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D7FB691315A6E9FF00239C16;
+			productRefGroup = D7FB691F15A6E9FF00239C16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7FB691D15A6E9FF00239C16 /* GAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7FB691C15A6E9FF00239C16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB695415A6FC3300239C16 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7FB691A15A6E9FF00239C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FB695215A6FC2A00239C16 /* AppDelegate.m in Sources */,
+				BE833E3C17F5EBBE00469862 /* AGBase32.m in Sources */,
+				D7FB695915A6FC3E00239C16 /* main.m in Sources */,
+				BE833E3D17F5EBBE00469862 /* AGClock.m in Sources */,
+				BE833E3F17F5EBBE00469862 /* AGStringEncoding.m in Sources */,
+				BE833E4017F5EBBE00469862 /* AGTotp.m in Sources */,
+				D7FB695E15A6FE4500239C16 /* MASShortcut.m in Sources */,
+				D7FB695F15A6FE4500239C16 /* MASShortcutView.m in Sources */,
+				D7FB696315A70DA500239C16 /* MASShortcutView+UserDefaults.m in Sources */,
+				BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */,
+				D7FB696E15A7435C00239C16 /* MASShortcut+UserDefaults.m in Sources */,
+				D71519301609CA1B005AAD95 /* MASShortcut+Monitoring.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D7FB693A15A6E9FF00239C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D7FB693B15A6E9FF00239C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D7FB693D15A6E9FF00239C16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/GAuth-Prefix.pch";
+				INFOPLIST_FILE = "Demo/GAuth-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = GAuth;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D7FB693E15A6E9FF00239C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/GAuth-Prefix.pch";
+				INFOPLIST_FILE = "Demo/GAuth-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = GAuth;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "GAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB693A15A6E9FF00239C16 /* Debug */,
+				D7FB693B15A6E9FF00239C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7FB693C15A6E9FF00239C16 /* Build configuration list for PBXNativeTarget "GAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7FB693D15A6E9FF00239C16 /* Debug */,
+				D7FB693E15A6E9FF00239C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7FB691515A6E9FF00239C16 /* Project object */;
+}
