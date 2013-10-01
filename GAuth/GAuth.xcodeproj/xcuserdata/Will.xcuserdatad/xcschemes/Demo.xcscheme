@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D7FB691D15A6E9FF00239C16"
-               BuildableName = "Demo.app"
+               BuildableName = "GAuth.app"
                BlueprintName = "GAuth"
                ReferencedContainer = "container:GAuth.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7FB691D15A6E9FF00239C16"
-            BuildableName = "Demo.app"
+            BuildableName = "GAuth.app"
             BlueprintName = "GAuth"
             ReferencedContainer = "container:GAuth.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7FB691D15A6E9FF00239C16"
-            BuildableName = "Demo.app"
+            BuildableName = "GAuth.app"
             BlueprintName = "GAuth"
             ReferencedContainer = "container:GAuth.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D7FB691D15A6E9FF00239C16"
-            BuildableName = "Demo.app"
+            BuildableName = "GAuth.app"
             BlueprintName = "GAuth"
             ReferencedContainer = "container:GAuth.xcodeproj">
          </BuildableReference>

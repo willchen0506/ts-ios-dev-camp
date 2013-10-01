@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E036705F-D8AC-4D5E-92EC-D638449EA89F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GAuth</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7A7F818E-0D6E-4EFA-AAF8-C3E7BB5E46B7</key>
+		<string>https://github.com/shpakovski/MASShortcut</string>
+		<key>D0541577-D89B-44F0-BB17-15FE4BA2619F</key>
+		<string>ssh://github.com/willchen0506/ts-ios-dev-camp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GAuth/GAuth.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7A7F818E-0D6E-4EFA-AAF8-C3E7BB5E46B7</key>
+		<string>../../MASShortcut</string>
+		<key>D0541577-D89B-44F0-BB17-15FE4BA2619F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/willchen0506/ts-ios-dev-camp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D0541577-D89B-44F0-BB17-15FE4BA2619F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7A7F818E-0D6E-4EFA-AAF8-C3E7BB5E46B7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MASShortcut</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0541577-D89B-44F0-BB17-15FE4BA2619F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ts-ios-dev-camp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
