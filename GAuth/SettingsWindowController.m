@@ -66,7 +66,7 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
     [super windowDidLoad];
     self.secretKeyString =[[NSUserDefaults standardUserDefaults] stringForKey:@"secret"];
     if (self.secretKeyString == nil){
-        self.secretKeyString = @"Please set your secret key";
+        self.secretKeyString = @"";
     }
     [self.secretKey setStringValue:self.secretKeyString];
     // Checkbox will enable and disable the shortcut view

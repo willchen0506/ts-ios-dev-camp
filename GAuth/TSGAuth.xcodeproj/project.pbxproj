@@ -56,7 +56,7 @@
 		BE833E3917F5EBBE00469862 /* AGStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGStringEncoding.m; sourceTree = "<group>"; };
 		BE833E3A17F5EBBE00469862 /* AGTotp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTotp.h; sourceTree = "<group>"; };
 		BE833E3B17F5EBBE00469862 /* AGTotp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTotp.m; sourceTree = "<group>"; };
-		D7FB691E15A6E9FF00239C16 /* GAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB691E15A6E9FF00239C16 /* TSGAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSGAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FB692215A6E9FF00239C16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D7FB692515A6E9FF00239C16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D7FB692715A6E9FF00239C16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		D7FB695015A6FC2A00239C16 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Demo/AppDelegate.h; sourceTree = "<group>"; };
 		D7FB695115A6FC2A00239C16 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Demo/AppDelegate.m; sourceTree = "<group>"; };
 		D7FB695315A6FC3300239C16 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Demo/MainMenu.xib; sourceTree = "<group>"; };
-		D7FB695515A6FC3E00239C16 /* GAuth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GAuth-Info.plist"; path = "Demo/GAuth-Info.plist"; sourceTree = SOURCE_ROOT; };
-		D7FB695615A6FC3E00239C16 /* GAuth-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GAuth-Prefix.pch"; path = "Demo/GAuth-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		D7FB695515A6FC3E00239C16 /* TSGAuth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TSGAuth-Info.plist"; path = "Demo/TSGAuth-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D7FB695615A6FC3E00239C16 /* TSGAuth-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TSGAuth-Prefix.pch"; path = "Demo/TSGAuth-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		D7FB695715A6FC3E00239C16 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Demo/main.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -127,7 +127,7 @@
 		D7FB691F15A6E9FF00239C16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7FB691E15A6E9FF00239C16 /* GAuth.app */,
+				D7FB691E15A6E9FF00239C16 /* TSGAuth.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 		D7FB692915A6E9FF00239C16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D7FB695515A6FC3E00239C16 /* GAuth-Info.plist */,
-				D7FB695615A6FC3E00239C16 /* GAuth-Prefix.pch */,
+				D7FB695515A6FC3E00239C16 /* TSGAuth-Info.plist */,
+				D7FB695615A6FC3E00239C16 /* TSGAuth-Prefix.pch */,
 				D7FB695715A6FC3E00239C16 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -195,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7FB691D15A6E9FF00239C16 /* GAuth */ = {
+		D7FB691D15A6E9FF00239C16 /* TSGAuth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7FB693C15A6E9FF00239C16 /* Build configuration list for PBXNativeTarget "GAuth" */;
+			buildConfigurationList = D7FB693C15A6E9FF00239C16 /* Build configuration list for PBXNativeTarget "TSGAuth" */;
 			buildPhases = (
 				D7FB691A15A6E9FF00239C16 /* Sources */,
 				D7FB691B15A6E9FF00239C16 /* Frameworks */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = GAuth;
+			name = TSGAuth;
 			productName = MASShortcutDemo;
-			productReference = D7FB691E15A6E9FF00239C16 /* GAuth.app */;
+			productReference = D7FB691E15A6E9FF00239C16 /* TSGAuth.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Vadim Shpakovski";
 			};
-			buildConfigurationList = D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "GAuth" */;
+			buildConfigurationList = D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "TSGAuth" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,7 +233,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7FB691D15A6E9FF00239C16 /* GAuth */,
+				D7FB691D15A6E9FF00239C16 /* TSGAuth */,
 			);
 		};
 /* End PBXProject section */
@@ -329,10 +329,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Demo/GAuth-Prefix.pch";
-				INFOPLIST_FILE = "Demo/GAuth-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/TSGAuth-Prefix.pch";
+				INFOPLIST_FILE = "Demo/TSGAuth-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = GAuth;
+				PRODUCT_NAME = TSGAuth;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -342,10 +342,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Demo/GAuth-Prefix.pch";
-				INFOPLIST_FILE = "Demo/GAuth-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/TSGAuth-Prefix.pch";
+				INFOPLIST_FILE = "Demo/TSGAuth-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = GAuth;
+				PRODUCT_NAME = TSGAuth;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -353,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "GAuth" */ = {
+		D7FB691815A6E9FF00239C16 /* Build configuration list for PBXProject "TSGAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7FB693A15A6E9FF00239C16 /* Debug */,
@@ -362,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7FB693C15A6E9FF00239C16 /* Build configuration list for PBXNativeTarget "GAuth" */ = {
+		D7FB693C15A6E9FF00239C16 /* Build configuration list for PBXNativeTarget "TSGAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7FB693D15A6E9FF00239C16 /* Debug */,

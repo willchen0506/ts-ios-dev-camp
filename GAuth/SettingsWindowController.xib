@@ -13,7 +13,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application"/>
-        <window title="GAuth" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="DemoWindow" animationBehavior="default" id="4h4-4q-7ga">
+        <window title="TSGAuth" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="DemoWindow" animationBehavior="default" id="4h4-4q-7ga">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" managed="YES"/>
             <rect key="contentRect" x="335" y="390" width="297" height="119"/>
@@ -29,7 +29,7 @@
                     <button horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iyT-cL-OZn">
                         <rect key="frame" x="18" y="83" width="260" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Global hotkey to open the GAuth alert" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qiu-Pa-XdY">
+                        <buttonCell key="cell" type="check" title="Global hotkey to open the TSGAuth alert" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qiu-Pa-XdY">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
