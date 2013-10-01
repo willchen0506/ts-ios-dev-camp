@@ -13,6 +13,8 @@
 		BE213C7817FB2EFD00986004 /* MASShortcut+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7117FB2EFD00986004 /* MASShortcut+UserDefaults.m */; };
 		BE213C7917FB2EFD00986004 /* MASShortcutView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7317FB2EFD00986004 /* MASShortcutView.m */; };
 		BE213C7A17FB2EFD00986004 /* MASShortcutView+UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7517FB2EFD00986004 /* MASShortcutView+UserDefaults.m */; };
+		BE213C7D17FB340400986004 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE213C7C17FB340400986004 /* SettingsViewController.m */; };
+		BE213C7F17FB34A900986004 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE213C7E17FB34A900986004 /* Settings.xib */; };
 		BE833E3C17F5EBBE00469862 /* AGBase32.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3317F5EBBE00469862 /* AGBase32.m */; };
 		BE833E3D17F5EBBE00469862 /* AGClock.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3517F5EBBE00469862 /* AGClock.m */; };
 		BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */ = {isa = PBXBuildFile; fileRef = BE833E3717F5EBBE00469862 /* AGOtp.m */; };
@@ -37,6 +39,9 @@
 		BE213C7317FB2EFD00986004 /* MASShortcutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASShortcutView.m; sourceTree = "<group>"; };
 		BE213C7417FB2EFD00986004 /* MASShortcutView+UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASShortcutView+UserDefaults.h"; sourceTree = "<group>"; };
 		BE213C7517FB2EFD00986004 /* MASShortcutView+UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASShortcutView+UserDefaults.m"; sourceTree = "<group>"; };
+		BE213C7B17FB340400986004 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BE213C7C17FB340400986004 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BE213C7E17FB34A900986004 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Settings.xib; path = Demo/Settings.xib; sourceTree = "<group>"; };
 		BE833E2F17F5EBBE00469862 /* aerogear-otp.ios-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "aerogear-otp.ios-Prefix.pch"; sourceTree = "<group>"; };
 		BE833E3117F5EBBE00469862 /* AeroGearOTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AeroGearOTP.h; sourceTree = "<group>"; };
 		BE833E3217F5EBBE00469862 /* AGBase32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBase32.h; sourceTree = "<group>"; };
@@ -152,6 +157,8 @@
 			children = (
 				D7FB695015A6FC2A00239C16 /* AppDelegate.h */,
 				D7FB695115A6FC2A00239C16 /* AppDelegate.m */,
+				BE213C7B17FB340400986004 /* SettingsViewController.h */,
+				BE213C7C17FB340400986004 /* SettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 		D7FB694815A6F62200239C16 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				BE213C7E17FB34A900986004 /* Settings.xib */,
 				D7FB695315A6FC3300239C16 /* MainMenu.xib */,
 			);
 			name = XIBs;
@@ -232,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE213C7F17FB34A900986004 /* Settings.xib in Resources */,
 				D7FB695415A6FC3300239C16 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +264,7 @@
 				BE213C7717FB2EFD00986004 /* MASShortcut+Monitoring.m in Sources */,
 				BE213C7A17FB2EFD00986004 /* MASShortcutView+UserDefaults.m in Sources */,
 				BE833E3E17F5EBBE00469862 /* AGOtp.m in Sources */,
+				BE213C7D17FB340400986004 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

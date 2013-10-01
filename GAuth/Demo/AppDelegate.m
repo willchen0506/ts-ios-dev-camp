@@ -8,6 +8,7 @@
 #import "AGClock.h"
 
 
+
 NSString *const MASPreferenceKeyShortcut = @"MASDemoShortcut";
 NSString *const MASPreferenceKeyShortcutEnabled = @"MASDemoShortcutEnabled";
 NSString *const MASPreferenceKeyConstantShortcutEnabled = @"MASDemoConstantShortcutEnabled";
@@ -40,11 +41,12 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
     __weak id _constantShortcutMonitor;
 }
 
-@synthesize window = _window;
-@synthesize shortcutView = _shortcutView;
-
 #pragma mark -
 - (IBAction)showMenu:(id)sender {
+    self.settingsVC = [[SettingsViewController alloc] initWithNibName:@"Settings" bundle:nil];
+    [self.window.contentView addSubview:self.settingsVC.view];
+    self.settingsVC.view.frame = ((NSView*)self.window.contentView).bounds;
+    [self.window orderFront:sender];
     NSLog(@"123");
 }
 - (IBAction)exitApp:(id)sender {
@@ -60,14 +62,6 @@ NSString *const OTPAuthURLSecondsBeforeNewOTPKey
     [self.statusItem setMenu:self.statusMenu];
     [self.statusItem setTitle:@"G"];
     [self.statusItem setHighlightMode:YES];
-    
-//    self.secretKeyString =[[NSUserDefaults standardUserDefaults] stringForKey:@"secret"];
-//    if (self.secretKeyString == nil){
-//        self.secretKeyString = @"";
-//    }
-//    [self.secretKey setStringValue:self.secretKeyString];
-//    // Checkbox will enable and disable the shortcut view
-//    [self.shortcutView bind:@"enabled" toObject:self withKeyPath:@"shortcutEnabled" options:nil];
 }
 
 - (void)dealloc
